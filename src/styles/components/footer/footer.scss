@@ -1,0 +1,45 @@
+@import '../../base.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background: #4d6edc;
+    padding: 1.25rem;
+    &-logo {
+        font-size: $font-logo-size;
+        color: $font-logo-color;
+        font-family: $font-primary-family;
+    }
+    &-items {
+        &-item {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            font-family: $font-primary-family;
+            font-size: $footer-size;
+            &-icons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: $font-title-color;
+                transition: .2s ease-in-out;
+                &:hover {
+                    color: #b5b5b5;
+                }
+            }
+        }
+        @media screen and (max-width: 760px)
+        {
+            &-item {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+        }
+    }
+}
