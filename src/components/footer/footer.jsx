@@ -14,6 +14,9 @@ const Footer = ({footer}) => {
                         )
                 })}
                 </ul>
+                <div className='footer-items-item'>
+                    <p className='footer-items-powered'>Powered By <i>Arturo Castillo</i></p>
+                </div>
             </div>
         </div>
     );

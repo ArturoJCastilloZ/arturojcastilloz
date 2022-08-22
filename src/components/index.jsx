@@ -9,7 +9,7 @@ import { useState } from 'react';
 import { data } from '../mock/mock';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-const { header, footer, home, about } = data;
+const { header, footer, home, about, studies, jobs } = data;
 
 const Index = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -28,7 +28,7 @@ const Index = () => {
                 <Routes>
                     <Route path="/" exact={true} element={<Home home={home} />} />
                     <Route path="/about" exact={true} element={<About about={about} footer={footer} />} />
-                    <Route path="/training" exact={true} element={<Training />} />
+                    <Route path="/training" exact={true} element={<Training studies={studies} jobs={jobs}/>} />
                     <Route path="/personal-projects" exact={true} element={<Projects />} />
                 </Routes>
             </div>

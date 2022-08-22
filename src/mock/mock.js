@@ -52,6 +52,54 @@ export const data = {
             name: "Privadas de Lincoln, García, Nuevo León",
         }
     ],
+    studies: [
+        {
+            title: "Superior university technician",
+            career: "Information and communication technologies",
+            date: "From September 2017 to August 2020",
+            institution: "Universidad Tecnológica de Santa Catarina",
+        },
+        {
+            title: "Engineering",
+            career: "Software development and management",
+            date: "From September 2020 to April 2022",
+            institution: "Universidad Tecnológica de Santa Catarina"
+        }
+    ],
+    jobs: [
+        {
+            title: "Web Development Intern",
+            institution: "Triple i Soluciones",
+            date: "From August 2021 to December 2021",
+            activity: `This company has a platform to manage tasks in a very orderly manner, 
+                said platform is called Fluxy. As a Web Development Intern, I made updates, 
+                fixes and modifications to this platform. Fluxy was created with Angular as FrontEnd, 
+                Go! as Backend and on localhost MongoDB was used.`,
+        },
+        {
+            title: "Junior Developer",
+            institution: "Tecsa Contact Center",
+            date: "From January 2022 to April 2022",
+            activity: `Develop web pages requested through tickets by the Continuous Improvement team 
+                for departments such as Human Resources, Technical Support, even to motivate advisors 
+                with different dynamics taught by the Marketing department. The developments are 
+                done with PHP, Laravel, Tailwindcss, Javascript, JQuery and Ajax Requests.`,
+        },
+        {
+            title: "Junior Developer",
+            institution: "v09&Co.",
+            date: "From April 2022 to July 2022",
+            activity: `Make updates or modifications to the Restology and Supercolchones pages, 
+                which were created in Magento2.`,
+        },
+        {
+            title: "Web Developer",
+            institution: "Consiss",
+            date: "From July 2022 to the present",
+            activity: `Developing new projects with the technology that best suits the requirement, 
+            as well as giving maintenance to projects already created.`,
+        },
+    ],
     footer: [
         {
             title: "GitHub",
