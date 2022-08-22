@@ -1,10 +1,5 @@
 @import '../../base.scss';
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .header {
     background: #4d6edc;
     padding: 1.25rem;
@@ -31,7 +26,7 @@
                     background: #0841ff;
                 }
                 @include media-up(m){
-                    font-size: 3.25rem;
+                    font-size: 1.25rem;
                 }
                 &-active {
                     padding: 10px;
@@ -43,7 +38,7 @@
                     font-family: $font-primary-family;
                     font-size: $font-title-size;
                     @include media-up(m){
-                        font-size: 3.25rem;
+                        font-size: 1.25rem;
                     }
                 }
             }
@@ -67,15 +62,12 @@
 
 @include media-up(m)
 {
-    .header {
-        padding: 3.25rem;
-    }
     .nav__icon {
         display: flex;
         justify-content: flex-start;
         color: $font-title-color;
         cursor: pointer;
-        font-size: 3.75em;
+        font-size: 2em;
     }
     .nav__icon-close {
         display: flex;
@@ -83,7 +75,7 @@
         padding: 20px 0 0 0;
         color: #ff7700;
         cursor: pointer;
-        font-size: 3.55rem;
+        font-size: 2rem;
     }
 
     .sidebar-responsive {

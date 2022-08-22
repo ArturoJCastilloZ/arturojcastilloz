@@ -3,7 +3,7 @@ import '../../styles/components/training/training.scss';
 
 const Training = ({studies, jobs}) => {
     return (
-        <div className='content'>
+        <div>
             <h1 className='studies-title-header'>Studies &darr;</h1>
             <div className='studies'>
                 {studies.map((studies, index) => {

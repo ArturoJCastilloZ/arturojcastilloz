@@ -1,10 +1,5 @@
 @import '../../base.scss';
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .footer {
     background: #4d6edc;
     padding: 1.25rem;
@@ -22,7 +17,7 @@
             font-family: $font-primary-family;
             font-size: $footer-size;
             @include media-up(m){
-                font-size: 2.55rem;
+                font-size: 1.15rem;
             }
             &-icons {
                 display: flex;

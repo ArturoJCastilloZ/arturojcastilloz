@@ -7,8 +7,9 @@
     justify-content: flex-start;
     font-family: $font-primary-family;
     &-title {
-        font-size: 3.25rem;
-        padding-bottom: 1.25em;
+        font-family: $font-primary-family;
+        font-size: 2.25rem;
+        padding: 20px 1rem;
         color: #4f4f4f;
     }
     &-info {
@@ -18,5 +19,8 @@
         & > p {
             padding: 10px 0;
         }
+    }
+    @include media-up(m){
+        padding: 2em;
     }
 }

@@ -14,8 +14,8 @@ $footer-size: 15px;
 $breakpoints: (
 
     lg : "min-width: 1024px",
-    m  : "max-width: 1023px",
-    s  : "max-width: 599px",
+    m  : "max-width: 768px",
+    s  : "max-width: 580px",
 );
 
 @mixin media-up($breakpoint) {
