@@ -1,5 +1,4 @@
 import Index from './components';
-import './App.css';
 import './styles/index.scss';
 
 function App() {
