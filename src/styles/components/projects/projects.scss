@@ -6,12 +6,11 @@
     font-family: $font-primary-family;
     &-cards {
         display: grid;
-        padding: 50px;
+        padding: 20px 1rem;
         grid-gap: 30px;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         @include media-up(m) {
-            padding: 50px;
-            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            padding: 2rem 10px;
         }
     }
     &-title {

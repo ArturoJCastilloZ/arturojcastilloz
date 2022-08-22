@@ -50,7 +50,7 @@
         }
     }
     @include media-up(m){
-        padding: 2em;
+        padding: 2em 10px;
         grid-auto-rows: 30rem;
         grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     }
@@ -106,7 +106,7 @@
         }
     }
     @include media-up(m) {
-        padding: 2em;
+        padding: 2em 10px;
         grid-auto-rows: 55rem;
         grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     }
