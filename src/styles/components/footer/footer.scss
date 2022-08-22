@@ -17,7 +17,7 @@
         &-item {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 10px;
             list-style: none;
             font-family: $font-primary-family;
             font-size: $footer-size;
@@ -28,9 +28,11 @@
                 align-items: center;
                 text-decoration: none;
                 color: $font-title-color;
+                padding: 10px;
+                border-radius: 10px;
                 transition: .2s ease-in-out;
                 &:hover {
-                    color: #b5b5b5;
+                    background: #0841ff;
                 }
             }
         }

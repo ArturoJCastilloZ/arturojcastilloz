@@ -17,7 +17,7 @@
         &-item {
             display: flex;
             justify-content: flex-end;
-            gap: 30px;
+            gap: 5px;
             list-style: none;
             &-nav-link {
                 text-decoration: none;
@@ -25,10 +25,15 @@
                 transition: .2s ease-in-out;
                 font-family: $font-primary-family;
                 font-size: $font-title-size;
+                padding: 10px;
+                border-radius: 10px;
                 &:hover {
-                    color: #b5b5b5;
+                    background: #0841ff;
                 }
                 &-active {
+                    padding: 10px;
+                    border-radius: 10px;
+                    background: #0841ff;
                     color: #b5b5b5;
                     text-decoration: none;
                     transition: .2s ease-in-out;

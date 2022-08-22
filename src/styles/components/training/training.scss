@@ -6,8 +6,9 @@
     gap: 2rem;
     grid-auto-rows: 27rem;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    font-family: $font-primary-family;
     &-title-header {
-        font-size: 3.25rem;
+        font-size: 2.25rem;
         padding: 20px 1rem;
         color: #4f4f4f;
     }
@@ -48,7 +49,7 @@
     grid-auto-rows: 35rem;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     &-title-header {
-        font-size: 3.25rem;
+        font-size: 2.25rem;
         padding: 20px 1rem;
         color: #4f4f4f;
     }
