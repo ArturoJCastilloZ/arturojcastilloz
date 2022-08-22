@@ -12,18 +12,18 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const { header, footer, home, about, studies, jobs, project } = data;
 
 const Index = () => {
-    const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [navbarOpen, setNavbarOpen] = useState(false);
 
-    const openSidebar = () => {
-      setSidebarOpen(true);
+    const openNavbar = () => {
+      setNavbarOpen(true);
     };
   
-    const closeSidebar = () => {
-      setSidebarOpen(false);
+    const closeNavbar = () => {
+      setNavbarOpen(false);
     };
     return (
         <Router>
-            <Header header={header} sidebarOpen={sidebarOpen} openSidebar={openSidebar} closeSidebar={closeSidebar}/>
+            <Header header={header} navbarOpen={navbarOpen} openNavbar={openNavbar} closeNavbar={closeNavbar}/>
             <div>
                 <Routes>
                     <Route path="/" exact={true} element={<Home home={home} />} />

@@ -14,6 +14,11 @@
         font-size: 2.25rem;
         padding: 20px 1rem;
         color: #4f4f4f;
+        @include media-up(m){
+            &-title {
+                font-size: 1.25rem;
+            } 
+        }
     }
     &-image {
         position: relative;
@@ -52,6 +57,9 @@
             &:hover {
                 // text-decoration: underline;
                 color: #72ccd8;
+            }
+            @include media-up(m) {
+                font-size: 12px;
             }
         }
         & > a {

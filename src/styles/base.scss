@@ -10,3 +10,16 @@ $font-logo-size: 1.75rem;
 $font-logo-color: #000000;
 
 $footer-size: 15px;
+
+$breakpoints: (
+
+    lg : "min-width: 1024px",
+    m  : "max-width: 1023px",
+    s  : "max-width: 599px",
+);
+
+@mixin media-up($breakpoint) {
+    @media (map-get($breakpoints, $breakpoint)) {
+        @content
+    }
+}
