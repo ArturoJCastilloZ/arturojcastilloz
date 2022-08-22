@@ -30,6 +30,9 @@
                 &:hover {
                     background: #0841ff;
                 }
+                @include media-up(m){
+                    font-size: 3.25rem;
+                }
                 &-active {
                     padding: 10px;
                     border-radius: 10px;
@@ -39,6 +42,9 @@
                     transition: .2s ease-in-out;
                     font-family: $font-primary-family;
                     font-size: $font-title-size;
+                    @include media-up(m){
+                        font-size: 3.25rem;
+                    }
                 }
             }
         }
@@ -61,12 +67,15 @@
 
 @include media-up(m)
 {
+    .header {
+        padding: 3.25rem;
+    }
     .nav__icon {
         display: flex;
         justify-content: flex-start;
         color: $font-title-color;
         cursor: pointer;
-        font-size: 1.75em;
+        font-size: 3.75em;
     }
     .nav__icon-close {
         display: flex;
@@ -74,7 +83,7 @@
         padding: 20px 0 0 0;
         color: #ff7700;
         cursor: pointer;
-        font-size: 1.55rem;
+        font-size: 3.55rem;
     }
 
     .sidebar-responsive {

@@ -4,13 +4,16 @@
     padding: 2em 5em;
     display: grid;
     gap: 2rem;
-    grid-auto-rows: 27rem;
+    grid-auto-rows: 20rem;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     font-family: $font-primary-family;
     &-title-header {
         font-size: 2.25rem;
         padding: 20px 1rem;
         color: #4f4f4f;
+        @include media-up(m){
+            font-size: 3.55rem;
+        }
     }
     &-card {
         padding: 10px 30px;
@@ -25,19 +28,32 @@
             color: $font-color-description;
             font-family: $font-primary-family;
             padding: 10px 0;
+            @include media-up(m) {
+                font-size: 3em;
+            }
         }
         &-career {
             font-size: 1.25em;
             color: #606060;
             font-family: $font-primary-family;
             padding: 10px 0;
+            @include media-up(m) {
+                font-size: 2.25em;
+            }
         }
         &-institution {
             font-size: 1.25em;
             color: #606060;
             font-family: $font-primary-family;
             padding: 10px 0;
+            @include media-up(m) {
+                font-size: 2.25em;
+            }
         }
+    }
+    @include media-up(m){
+        grid-auto-rows: 30rem;
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     }
 }
 
@@ -52,6 +68,9 @@
         font-size: 2.25rem;
         padding: 20px 1rem;
         color: #4f4f4f;
+        @include media-up(m){
+            font-size: 3.55rem;
+        }
     }
     &-card {
         padding: 10px 30px;
@@ -66,18 +85,31 @@
             color: $font-color-description;
             font-family: $font-primary-family;
             padding: 10px 0;
+            @include media-up(m) {
+                font-size: 3em;
+            }
         }
         &-career {
             font-size: 1.25em;
             color: #606060;
             font-family: $font-primary-family;
             padding: 10px 0;
+            @include media-up(m) {
+                font-size: 2.25em;
+            }
         }
         &-institution {
             font-size: 1.25em;
             color: #606060;
             font-family: $font-primary-family;
             padding: 10px 0;
+            @include media-up(m) {
+                font-size: 2.25em;
+            }
         }
+    }
+    @include media-up(m) {
+        grid-auto-rows: 55rem;
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     }
 }

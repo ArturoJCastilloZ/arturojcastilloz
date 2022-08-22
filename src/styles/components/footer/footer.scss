@@ -21,6 +21,9 @@
             list-style: none;
             font-family: $font-primary-family;
             font-size: $footer-size;
+            @include media-up(m){
+                font-size: 2.55rem;
+            }
             &-icons {
                 display: flex;
                 flex-direction: column;

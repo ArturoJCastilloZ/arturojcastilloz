@@ -6,9 +6,13 @@
     font-family: $font-primary-family;
     &-cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        padding: 20px;
-        grid-gap: 40px;
+        padding: 50px;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        @include media-up(m) {
+            padding: 50px;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        }
     }
     &-title {
         font-size: 2.25rem;
@@ -16,7 +20,7 @@
         color: #4f4f4f;
         @include media-up(m){
             &-title {
-                font-size: 1.25rem;
+                font-size: 2.25rem;
             } 
         }
     }
@@ -59,7 +63,7 @@
                 color: #72ccd8;
             }
             @include media-up(m) {
-                font-size: 12px;
+                font-size: 2rem;
             }
         }
         & > a {
@@ -70,6 +74,10 @@
             font-size: 15px;
             line-height: 25px;
             font-weight: 500;
+            @include media-up(m){
+                font-size: 1.25rem;
+                padding: 50px 40px;
+            }
         }
     }
 }
