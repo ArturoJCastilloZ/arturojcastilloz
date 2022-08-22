@@ -16,7 +16,8 @@
     &-items {
         &-item {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
+            gap: 30px;
             list-style: none;
             font-family: $font-primary-family;
             font-size: $footer-size;
@@ -31,14 +32,6 @@
                 &:hover {
                     color: #b5b5b5;
                 }
-            }
-        }
-        @media screen and (max-width: 760px)
-        {
-            &-item {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 20px;
             }
         }
     }

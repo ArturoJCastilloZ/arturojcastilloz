@@ -16,7 +16,8 @@
     &-items {
         &-item {
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-end;
+            gap: 30px;
             list-style: none;
             &-nav-link {
                 text-decoration: none;
@@ -57,7 +58,7 @@
     display: none;
 }
 
-@media screen and (max-width: 978px)
+@media screen and (max-width: 760px)
 {
     .nav__icon {
         display: flex;

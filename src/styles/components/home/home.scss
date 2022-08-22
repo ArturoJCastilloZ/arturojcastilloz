@@ -1,0 +1,39 @@
+@import '../../base.scss';
+
+.home {
+    padding: 2em 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-primary-family;
+    &-author {
+        font-size: 3.75em;
+    }
+    &-imagen {
+        width: 15em;
+        height: 13em;
+        border-radius: 50%;
+        border: 6px solid  $font-color;
+        box-shadow: 0 0 10px 2px $font-color;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: .2s ease-in-out;
+        &:hover {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            border: 6px solid  #4d6edc;
+            box-shadow: 0 0 10px 2px #4d6edc;
+        }
+    }
+    &-presentation {
+        font-size: 1.55em;
+        color: $font-color;
+    }
+    &-description {
+        font-size: 1.35em;
+        font-style: italic;
+        color: $font-color-description;
+        padding: 10px 0;
+    }
+}
