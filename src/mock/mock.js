@@ -137,19 +137,19 @@ export const data = {
         },
         {
             img: miweb2,
-            title: "castillocvweb.vercel.app",
+            title: "My second web CV",
             url: "https://castillocvweb.vercel.app/",
             description: `This is another web page dedicated to my resume, which was created with Reactjs and a javascript tool was used for the transitions when scrolling the page.`
         },
         {
             img: memo,
-            title: "memorama-nu.vercel.app",
+            title: "Memorama",
             url: "https://memorama-nu.vercel.app/",
             description: `Memorama game with programming images created in Javascript.`
         },
         {
             img: work,
-            title: "viakable.pcel.com",
+            title: "Viakable e-commerce",
             url: "https://viakable.pcel.com/",
             description: `E-commerce site recently created for the company Viakable. 
                 This website was created by the PCEL team of developers, to which I currently belong, using Opencart, which is a specialized Framework for e-commerce. `

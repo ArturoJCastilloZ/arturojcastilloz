@@ -7,7 +7,7 @@
     &-cards {
         display: grid;
         padding: 20px 1rem;
-        grid-gap: 30px;
+        gap: 20px;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         @include media-up(m) {
             padding: 2rem 10px;
@@ -39,7 +39,9 @@
     }
     &-card {
         border-radius: 20px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, .18);
+        border: 1px solid #4f4f4f;
+        box-shadow: 5px 2px 4px 0px #4f4f4f;
+        transition: .2s ease-in-out;
         & > .projects-image::after {
             background-image: linear-gradient(200deg, #3eff5f, #5390ff);
         }

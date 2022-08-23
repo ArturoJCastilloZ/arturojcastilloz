@@ -15,7 +15,7 @@ const Header = ({header, navbarOpen, closeNavbar, openNavbar}) => {
                     return (
                         // <li key={header.title + index}><a href={header.url}>{header.title}</a></li>
                         <li key={header.title + index}>
-                            <NavLink to={header.url} className={({ isActive }) => "header-items-item-nav-link" + (isActive ? "-active" : "")}>{header.title}</NavLink>
+                            <NavLink to={header.url} className={({ isActive }) => "header-items-item-nav-link" + (isActive ? "-active" : "")} onClick={() => closeNavbar()}>{header.title}</NavLink>
                         </li>
                     )
                 })}
