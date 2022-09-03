@@ -2,7 +2,7 @@
 
 .footer {
     background: #4d6edc;
-    padding: 1.25rem;
+    // padding: 1.25rem;
     &-logo {
         font-size: $font-logo-size;
         color: $font-logo-color;
@@ -12,7 +12,8 @@
         &-item {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            // gap: 10px;
+            padding: 10px 0;
             list-style: none;
             font-family: $font-primary-family;
             font-size: $footer-size;
@@ -35,7 +36,7 @@
             }
         }
         &-powered {
-            padding: 10px 0 0 0;
+            padding: 5px 0 10px 0;
             font-size: 1.15rem;
             color: #b5b5b5
         }
