@@ -8,12 +8,17 @@
     background: #5265c4;
     font-family: $font-primary-family;
     &-logo {
-        font-weight: 600;
-        font-size: 1.75rem;
+        font-weight: 400;
+        font-size: 2.25rem;
         margin: 15px;
-        font-style: italic;
-        color: #b5b5b5;
+        // font-style: italic;
+        font-family: $font-logo;
+        letter-spacing: 3px;
         text-decoration: none;
+        color: #CCCCCC;
+        @include media-up(m){
+            font-size: 1.75rem;
+        }
     }
     &-items {
         padding: 0 20px;
