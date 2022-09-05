@@ -5,7 +5,6 @@ import Footer from './footer/footer';
 import About from './about/about';
 import Training from './training/training';
 import Projects from './projects/projects';
-import { useState } from 'react';
 import { data } from '../mock/mock';
 import '../styles/index.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -13,19 +12,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const { header, footer, home, about, studies, jobs, project } = data;
 
 const Index = () => {
-    const [navbarOpen, setNavbarOpen] = useState(false);
-
-    const openNavbar = () => {
-      setNavbarOpen(true);
-    };
-  
-    const closeNavbar = () => {
-      setNavbarOpen(false);
-    };
     return (
         <Router>
             <div className='body'>
-            <Header header={header} navbarOpen={navbarOpen} openNavbar={openNavbar} closeNavbar={closeNavbar}/>
+            <Header header={header} />
                 <Routes>
                     <Route path="/" exact={true} element={<Home home={home} />} />
                     <Route path="/about" exact={true} element={<About about={about} footer={footer} />} />

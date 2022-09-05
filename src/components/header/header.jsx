@@ -1,27 +1,32 @@
 import React from 'react';
-import { FaBars,FaTimes } from 'react-icons/fa';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../../styles/components/header/header.scss';
 
 
-const Header = ({header, navbarOpen, closeNavbar, openNavbar}) => {
+const Header = ({header}) => {
+    const [isOpen, setIsOpen] = useState(false)
     return (
-        <div className='header'>
-            <div className='header-items'>
-                <div className="nav__icon" onClick={() => openNavbar()}><FaBars /></div>
-                <ul className={navbarOpen ? "sidebar-responsive" : "header-items-item"}>
-                <div className="nav__icon-close" onClick={() => closeNavbar()}><FaTimes /></div>
+       <section>
+        <div className='navbar'>
+            <span className='navbar-logo'>ArturoJCastilloZ</span>
+            <div className={`navbar-items ${isOpen && "open"}`}>
                 {header.map((header, index) => {
                     return (
-                        // <li key={header.title + index}><a href={header.url}>{header.title}</a></li>
-                        <li key={header.title + index}>
-                            <NavLink to={header.url} className={({ isActive }) => "header-items-item-nav-link" + (isActive ? "-active" : "")} onClick={() => closeNavbar()}>{header.title}</NavLink>
-                        </li>
+                        <NavLink 
+                            key={index} 
+                            to={header.url}
+                            className={({isActive}) => "navbar-items-item" + (isActive ? "-active" : "")}
+                            onClick={() => setIsOpen(!isOpen)}
+                        >{header.title}</NavLink>
                     )
                 })}
-                </ul>
+            </div>
+            <div className={`navbar-toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
+                <div className='navbar-toggle-bar'></div>
             </div>
         </div>
+       </section>
     );
 };
 
