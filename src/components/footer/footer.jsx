@@ -11,12 +11,9 @@ const Footer = ({footer}) => {
                         <li key={footer.title + index}>
                             <a href={footer.url} className='footer-items-item-icons'>{footer.icon} {footer.title}</a>
                         </li>
-                        )
+                    )
                 })}
                 </ul>
-                <div className='footer-items-item'>
-                    <p className='footer-items-powered'>Powered By <i>Arturo Castillo</i></p>
-                </div>
             </div>
         </div>
     );

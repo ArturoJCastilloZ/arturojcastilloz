@@ -9,7 +9,9 @@ const Header = ({header}) => {
     return (
        <section>
         <div className='navbar'>
-            <span className='navbar-logo'>ArturoJCastilloZ</span>
+            <a href="/" className='navbar-logo'>
+                <span>ArturoJCastilloZ</span>
+            </a>
             <div className={`navbar-items ${isOpen && "open"}`}>
                 {header.map((header, index) => {
                     return (
