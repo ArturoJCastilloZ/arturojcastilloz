@@ -24,12 +24,14 @@
         & img {
             width: 250px;
             height: auto;
+            cursor: pointer;
         }
         &-menu {
             display: flex;
             &-item {
                 padding: 1rem;
                 font-weight: 500;
+                cursor: pointer;
                 & .active {
                     padding-bottom: 12px;
                     border-bottom: 3px solid $secondary-color;
