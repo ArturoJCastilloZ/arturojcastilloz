@@ -1,0 +1,90 @@
+@import '../../base.scss';
+@import '../../responsive.scss';
+
+.jobs {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: $font-poppins;
+    padding: 4rem 0;
+    & > h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    &-items {
+        width: 1240px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background-color: $secondary-dark;
+            left: calc(50% - 1px);
+        }
+        &-item {
+            // background-color: #2f363e;
+            position: relative;
+            margin-bottom: 40px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:nth-child(odd){
+                padding-right: calc(50% + 30px);
+                text-align: right;
+            }
+            &:nth-child(even){
+                padding-left: calc(50% + 30px);
+            }
+            &-date {
+                font-size: 18px;
+                color: $primary-color;
+                margin: 6px 0 15px;
+            }
+        }
+    }
+    &-dot {
+        height: 16px;
+        width: 16px;
+        background-color: $primary-dark;
+        position: absolute;
+        left: calc(50% - 8px);
+        border-radius: 50%;
+        top: 10px;
+    }
+    &-content {
+        background-color: #131313;
+        padding: 30px;
+        margin-top: 50px;
+        border-radius: 8px;
+        & img {
+            width: 65px;
+            border-radius: 50%;
+            margin-top: -45px;
+            margin-bottom: 10px;
+        }
+        & h3 {
+            font-size: 20px;
+            color: #ffffff;
+            margin: 0 0 15px;
+            text-transform: capitalize;
+        }
+        & span {
+            font-size: 20px;
+            color: #c8c8c8;
+            line-height: 22px;
+        }
+        & p {
+            color: #c8c8c8;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            padding-top: 1rem
+        }
+    }
+}
+
+/* ########## IMPORT RESPONSIVE FILE ########## */
+@import './responsive-jobs.scss';

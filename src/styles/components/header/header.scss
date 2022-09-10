@@ -1,123 +1,53 @@
 @import '../../base.scss';
 
-.navbar {
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #5265c4;
-    font-family: $font-primary-family;
-    &-logo {
-        font-weight: 400;
-        font-size: 2.25rem;
-        margin: 15px;
-        // font-style: italic;
-        font-family: $font-logo;
-        letter-spacing: 3px;
-        text-decoration: none;
-        color: #CCCCCC;
-        @include media-up(m){
-            font-size: 1.75rem;
+.header {
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.9);
+    &-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1240px;
+        margin: auto;
+        height: 100%;
+        padding: 0 1rem;
+        &-hamburguer {
+            display: none;
         }
-    }
-    &-items {
-        padding: 0 20px;
-        @include media-up(m){
-            position: absolute;
-            top: 60px;
+        & img {
+            width: 250px;
+            height: auto;
+        }
+        &-menu {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: #3b4da7;
-            left: 0;
-            width: 100%;
-            padding: 20px 0;
-            transform: translateX(-100%);
-            transition: all .45s ;
-            z-index: 1;
-            &.open {
-                transform: translateX(0);
-                z-index: 1;
-            }
-        }
-        &-item {
-            color: #ffffff;
-            font-size: 20px;
-            text-decoration: none;
-            padding: 10px;
-            position: relative;
-            opacity: 0.9;
-            margin: 0 5px;
-            @include media-up(m){
-                font-size: 1.25rem;
-            }
-            &:hover {
-                padding: 10px;
-                border-radius: 10px;
-                background: #0841ff;
-                color: #b5b5b5;
-                text-decoration: none;
-                transition: .2s ease-in-out;
-            }
-            &-active {
-                padding: 10px;
-                border-radius: 10px;
-                background: #0841ff;
-                color: #b5b5b5;
-                text-decoration: none;
-                transition: .2s ease-in-out;
-                font-size: $font-title-size;
-                margin: 0 5px;
-            }
-        }
-    }
-    &-toggle {
-        display: none;
-        &.open > &-bar{
-            transform: translateX(-40px);
-            background: transparent;
-        }
-        &.open > &-bar::before{
-            width: 32px;
-            transform: rotate(45deg) translate(26px, -26px);
-        }
-        &.open > &-bar::after{
-            width: 32px;
-            transform: rotate(-45deg) translate(26px, 26px);
-        }
-        @include media-up(m){
-            display: flex;
-            width: 50px;
-            height: 50px;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-        &-bar {
-            @include media-up(m){
-                position: relative;
-                width: 32px;
-                height: 2px;
-                background: #ffffff;
-                transition: all .45s ease-in-out;
-                &::before, &::after {
-                    content: "";
-                    position: absolute;
-                    height: 2px;
-                    background: #ffffff;
-                    border-radius: 2px;
-                    transition: all .45s ease-in-out;
+            &-item {
+                padding: 1rem;
+                font-weight: 500;
+                & .active {
+                    padding-bottom: 12px;
+                    border-bottom: 3px solid $secondary-color;
+                    transition: all .2s;
                 }
-                &::before {
-                    width: 16px;
-                    transform: translateY(-8px);
-                    right: 0;
+                & > a {
+                    color: #ffffff;
                 }
-                &::after {
-                    width: 16px;
-                    transform: translateY(8px);
+                & > a:hover {
+                    padding-bottom: 12px;
+                    border-bottom: 3px solid $secondary-color;
+                    transition: all .3s;
                 }
             }
         }
     }
 }
+
+
+/* ########## IMPORT RESPONSIVE FILE ########## */
+@import './responsive-header.scss';

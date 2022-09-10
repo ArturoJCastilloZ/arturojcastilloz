@@ -1,30 +1,32 @@
-import React from 'react';
-import Home from './home/home';
+import React, { useEffect } from 'react';
 import Header from './header/header';
-import Footer from './footer/footer';
+import Hero from './hero/hero';
 import About from './about/about';
-import Training from './training/training';
+import Studies from './studies/studies';
+import Jobs from './jobs/jobs';
 import Projects from './projects/projects';
+import Footer from './footer/footer';
 import { data } from '../mock/mock';
 import '../styles/index.scss';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
-const { header, footer, home, about, studies, jobs, project } = data;
+const { header, footer, hero, about, studies, jobs, project } = data;
 
 const Index = () => {
+    useEffect(() => {
+        Aos.init({ duration: 3000 });
+      }, [])
     return (
-        <Router>
-            <div className='body'>
+        <div>
             <Header header={header} />
-                <Routes>
-                    <Route path="/" exact={true} element={<Home home={home} />} />
-                    <Route path="/about" exact={true} element={<About about={about} footer={footer} />} />
-                    <Route path="/training" exact={true} element={<Training studies={studies} jobs={jobs}/>} />
-                    <Route path="/my-projects" exact={true} element={<Projects project={project}/>} />
-                </Routes>
+            <Hero hero={hero} />
+            <About about={about} footer={footer} />
+            <Studies studies={studies} />
+            <Jobs jobs={jobs}/>
+            {/* <Projects project={project}/> */}
             <Footer footer={footer}/>
-            </div>
-        </Router>
+        </div>
     );
 };
 

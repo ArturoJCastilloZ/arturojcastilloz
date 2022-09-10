@@ -1,0 +1,27 @@
+@import '../../responsive.scss';
+
+@include media-up(lm){
+    .jobs {
+        &-items {
+            width: 100%;
+            &::before{
+                left: 17px;
+            }
+            &-item {
+                &:nth-child(odd){
+                    padding-right: 0;
+                    text-align: left;
+                }
+                &:nth-child(even), &:nth-child(odd){
+                    padding-left: 37px;
+                }
+            }
+        }
+        &-dot {
+            left: 10px;
+        }
+        &-content {
+            margin: 50px 20px 50px 0;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import '../../responsive.scss';
+
+@include media-up(lm) {
+    .hero {
+        &-content {
+            &-dir {
+                flex-direction: column;
+                font-size: 1rem;
+                & ul:first-child {
+                    padding-bottom  : 2rem;
+                }
+            }
+            & p:first-child, & p:nth-child(2) {
+                font-weight: 600;
+                font-size: 2.75rem;
+                font-family: $font-primary-family;
+            }
+            & p:nth-child(3) {
+                font-size: .95rem;
+            }
+        }
+    }
+}

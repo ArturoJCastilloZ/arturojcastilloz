@@ -1,16 +1,19 @@
 @import './base.scss';
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 .body {
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
-    @include media-up(m){
-        display: grid;
-        min-height: 100vh;
-        grid-template-rows: auto 1fr auto;
-    }
+    background: linear-gradient(rgba(0, 0, 0, 0.753), rgb(0, 0, 0)), url('../assets/img1.jpg');
+}
+
+body {
+    font-family: $font-poppins;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.2rem;
+    line-height: 1.2;
 }

@@ -1,0 +1,35 @@
+@import '../../responsive.scss';
+
+@include media-up(lm){
+    .header {
+        max-width: 100%;
+        background-color: rgba(0,0,0,.9);
+        &-navbar {
+            max-width: 100%;
+            & img {
+                width: 200px;
+            }
+            &-hamburguer {
+                display: block;
+            }
+            &-menu {
+                position: fixed;
+                left: -100%;
+                top: 90px;
+                flex-direction: column;
+                background-color: rgba(0,0,0,.9);
+                width: 100%;
+                height: 90vh;
+                z-index: 999;
+                text-align: center;
+                transition: all .3s;
+                &-item {
+                    margin: 1.5rem 0;
+                }
+                &.active {
+                    left: 0;
+                }
+            }
+        }
+    }
+}

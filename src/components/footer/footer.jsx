@@ -1,22 +1,28 @@
-import React from 'react';
-import '../../styles/components/footer/footer.scss';
+import React from 'react'
+import '../../styles/components/footer/footer.scss'
 
 const Footer = ({footer}) => {
-    return (
-        <div className='footer'>
-            <div className='footer-items'>
-                <ul className='footer-items-item'>
-                {footer.map((footer, index) => {
-                    return (
-                        <li key={footer.title + index}>
-                            <a href={footer.url} className='footer-items-item-icons'>{footer.icon} {footer.title}</a>
-                        </li>
-                    )
-                })}
-                </ul>
-            </div>
+  const date = new Date();
+  const now = date.getFullYear();
+  return (
+    <div className='footer'>
+      <div className='footer-container'>
+        <ul>
+          {footer.map((footer, index) => {
+            return (
+              <li className='footer-item' key={index}>
+                <a href={footer.url}>{footer.icon}</a>
+              </li>
+            )
+          })}
+        </ul>
+        <div className='footer-container-bottom'>
+          <span className='line'></span>
+          <p>{now} ArturoJCastilloZ, All rights reserved</p>
         </div>
-    );
+      </div>
+    </div>
+  )
 }
 
-export default Footer;
+export default Footer

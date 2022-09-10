@@ -1,0 +1,19 @@
+@import '../../responsive.scss';
+
+@include media-up(lm){
+    .studies {
+        &-container {
+            width: 100%;
+        }
+        &-content {
+            grid-template-columns: 1fr;
+            &-card {
+                max-width: 100%;
+                margin: 1rem;
+                & img {
+                    width: 18vw;
+                }
+            }
+        }
+    }
+}

@@ -4,104 +4,106 @@ import miweb from '../assets/mi-web.png';
 import miweb2 from '../assets/miweb2.png';
 import memo from '../assets/memorama.png';
 import work from '../assets/work-project.png';
+import utsc from '../assets/utsc.png'
+import consiss from '../assets/consiss.jpg'
+import triplei from '../assets/triplei.png'
+import wild from '../assets/wild.jpg'
+import tecsa from '../assets/tecsa.jpg'
 
 export const data = {
     header: [
         {
             title: "Home",
-            url: "/"
+            url: "home"
         },
         {
             title: "About Me",
-            url: "/about"
+            url: "about"
         },
         {
-            title: "Training",
-            url: "/training"
+            title: "Studies",
+            url: "studies"
         },
         {
-            title: "My Projects",
-            url: "/my-projects"
+            title: "Jobs",
+            url: "jobs"
         },
+        // {
+        //     title: "Projects",
+        //     url: "projects"
+        // },
     ],
-    home: [
+    hero: [
         {
-            author: "Arturo Castillo",
+            greeting: "Hello guest!", 
+            author: "I am Arturo Castillo",
             presentation: "Software development and management engineer",
             image: img,
+            mun: "Santa Catarina",
+            cdest: "Monterrey, Nuevo León",
+            mun2: "García",
+            cdest2: "Monterrey, Nuevo León",
+        }
+    ],
+    about: [
+        {
+            name: "Arturo de Jesús Castillo Zapata",
+            profesion: "Software development and management engineer",
             description: `I consider myself a person with the ability to
             web development with different languages, frameworks and libraries, even to be learning and, at the same time, to be developing a project.
             I am a person committed to what I do, I like to work orderly and research on new technologies, I consider that my work is efficient, effective and of quality.`
         }
     ],
-    about: [
-        {
-            title: "Name: ",
-            name: "Arturo de Jesús Castillo Zapata",
-        },
-        {
-            title: "Presentation: ",
-            name: "Software development and management engineer",
-        },
-        {
-            title: "Age: ",
-            name: "29 year's old",
-        },
-        {
-            title: "Primary address: ",
-            name: "Las Sombrillas, Santa Catarina, Nuevo León",
-        },
-        {
-            title: "Secondary address: ",
-            name: "Privadas de Lincoln, García, Nuevo León",
-        }
-    ],
     studies: [
         {
-            title: "Superior university technician",
-            career: "Information and communication technologies",
-            date: "From September 2017 to August 2020",
+            img: utsc,
+            title: "University technician in information and communication technologies",
             institution: "Universidad Tecnológica de Santa Catarina",
+            date: "From September 2017 to August 2020",
         },
         {
-            title: "Engineering",
-            career: "Software development and management",
+            img: utsc,
+            title: "Software development and management engineering",
+            institution: "Universidad Tecnológica de Santa Catarina",
             date: "From September 2020 to April 2022",
-            institution: "Universidad Tecnológica de Santa Catarina"
         }
     ],
     jobs: [
         {
-            title: "Web Development Intern",
-            institution: "Triple i Soluciones",
-            date: "From August 2021 to December 2021",
-            activity: `This company has a platform to manage tasks in a very orderly manner, 
-                said platform is called Fluxy. As a Web Development Intern, I made updates, 
-                fixes and modifications to this platform. Fluxy was created with Angular as FrontEnd, 
-                Go! as Backend and on localhost MongoDB was used.`,
+            img: consiss,
+            title: "Web Developer",
+            institution: "Consiss",
+            date: "July 2022 to the present",
+            activity: `Developing new projects with the technology that best suits the requirement, 
+            as well as giving maintenance to projects already created.`,
         },
         {
+            img: wild,
+            title: "Junior Developer",
+            institution: "v09&Co.",
+            date: "April to July 2022",
+            activity: `Make updates or modifications to the Restology and Supercolchones pages, 
+                which were created in Magento2.`,
+        },
+        {
+            img: tecsa,
             title: "Junior Developer",
             institution: "Tecsa Contact Center",
-            date: "From January 2022 to April 2022",
+            date: "January to April 2022",
             activity: `Develop web pages requested through tickets by the Continuous Improvement team 
                 for departments such as Human Resources, Technical Support, even to motivate advisors 
                 with different dynamics taught by the Marketing department. The developments are 
                 done with PHP, Laravel, Tailwindcss, Javascript, JQuery and Ajax Requests.`,
         },
         {
-            title: "Junior Developer",
-            institution: "v09&Co.",
-            date: "From April 2022 to July 2022",
-            activity: `Make updates or modifications to the Restology and Supercolchones pages, 
-                which were created in Magento2.`,
-        },
-        {
-            title: "Web Developer",
-            institution: "Consiss",
-            date: "From July 2022 to the present",
-            activity: `Developing new projects with the technology that best suits the requirement, 
-            as well as giving maintenance to projects already created.`,
+            img: triplei,
+            title: "Web Development Intern",
+            institution: "Triple i Soluciones",
+            date: "August to December 2021",
+            activity: `This company has a platform to manage tasks in a very orderly manner, 
+                said platform is called Fluxy. As a Web Development Intern, I made updates, 
+                fixes and modifications to this platform. Fluxy was created with Angular as FrontEnd, 
+                Go! as Backend and on localhost MongoDB was used.`,
         },
     ],
     footer: [
