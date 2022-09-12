@@ -9,9 +9,21 @@
             grid-template-columns: 1fr;
             &-card {
                 max-width: 100%;
-                margin: 1rem;
+                margin-top: 3rem;
                 & img {
-                    width: 18vw;
+                    width: 45%;
+                }
+            }
+        }
+    }
+}
+
+@include media-up(m){
+    .studies {
+        &-content {
+            &-card {
+                & img {
+                    width: 35%;
                 }
             }
         }

@@ -21,7 +21,21 @@
             left: 10px;
         }
         &-content {
-            margin: 50px 20px 50px 0;
+            margin: 50px 0;
+            & img {
+                width: 40%;
+                margin-top: -70px;
+            }
+        }
+    }
+}
+
+@include media-up(m){
+    .jobs {
+        &-content {
+            & img {
+                width: 20%;
+            }
         }
     }
 }

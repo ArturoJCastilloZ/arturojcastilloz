@@ -4,11 +4,12 @@
 .studies {
     background-color: #000000;
     color: #ffffff;
+    padding: 8rem 1rem;
     width: 100%;
     &-container {
         width: 1240px;
         margin: 0 auto;
-        padding: 4rem 0rem;
+        // padding: 4rem 0rem;
         & > h2 {
             font-size: 3rem;
             text-align: center;

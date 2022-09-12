@@ -4,7 +4,7 @@ import '../../styles/components/jobs/jobs.scss'
 const Jobs = ({jobs}) => {
   return (
     <div className='jobs' id='jobs'>
-      <h2>Jobs</h2>
+      <h2 data-aos="zoom-in">Jobs</h2>
       <span className='line'></span>
       <div className='jobs-items'>
         {jobs.map((jobs, index) => {

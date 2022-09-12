@@ -28,10 +28,10 @@ export const data = {
             title: "Jobs",
             url: "jobs"
         },
-        // {
-        //     title: "Projects",
-        //     url: "projects"
-        // },
+        {
+            title: "Projects",
+            url: "projects"
+        },
     ],
     hero: [
         {
@@ -128,11 +128,12 @@ export const data = {
             url: "https://api.whatsapp.com/send?phone=5218116069640"
         }
     ],
-    project: [
+    projects: [
         {
             img: miweb,
             title: "My first web CV",
             url: "https://arturocastillocv.vercel.app/",
+            repo: "https://github.com/ArturoJCastilloZ/arturocastillocv",
             description: `My first hosted web development was my resume. 
                 I liked how my page was taking shape while I was learning to use the reactjs framework. 
                 Although it is something basic and simple, it is motivating to see how to get things out even without having prior knowledge of this framework.`,
@@ -141,18 +142,21 @@ export const data = {
             img: miweb2,
             title: "My second web CV",
             url: "https://castillocvweb.vercel.app/",
+            repo: "https://github.com/ArturoJCastilloZ/castillocvweb",
             description: `This is another web page dedicated to my resume, which was created with Reactjs and a javascript tool was used for the transitions when scrolling the page.`
         },
         {
             img: memo,
             title: "Memorama",
             url: "https://memorama-nu.vercel.app/",
+            repo: "https://github.com/ArturoJCastilloZ/memorama",
             description: `Memorama game with programming images created in Javascript.`
         },
         {
             img: work,
             title: "Viakable e-commerce",
             url: "https://viakable.pcel.com/",
+            repo: "https://viakable.pcel.com/",
             description: `E-commerce site recently created for the company Viakable. 
                 This website was created by the PCEL team of developers, to which I currently belong, using Opencart, which is a specialized Framework for e-commerce. `
         }

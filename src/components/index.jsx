@@ -4,14 +4,14 @@ import Hero from './hero/hero';
 import About from './about/about';
 import Studies from './studies/studies';
 import Jobs from './jobs/jobs';
-// import Projects from './projects/projects';
+import Projects from './projects/projects';
 import Footer from './footer/footer';
 import { data } from '../mock/mock';
 import '../styles/index.scss';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-const { header, social, hero, about, studies, jobs } = data;
+const { header, social, hero, about, studies, jobs, projects } = data;
 
 const Index = () => {
     useEffect(() => {
@@ -24,7 +24,7 @@ const Index = () => {
             <About about={about} />
             <Studies studies={studies} />
             <Jobs jobs={jobs}/>
-            {/* <Projects project={project}/> */}
+            <Projects projects={projects}/>
             <Footer social={social}/>
         </div>
     );
