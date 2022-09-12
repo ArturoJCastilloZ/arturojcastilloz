@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/components/hero/hero.scss'
 
-const Hero = ({hero}) => {
+const Hero = ({hero, social}) => {
   return (
     <div className='hero' id='home'>
       <div className='hero-content'>
@@ -20,6 +20,19 @@ const Hero = ({hero}) => {
               <li>{hero.mun2}</li>
               <li>{hero.cdest2}</li>
             </ul>
+            </div>
+            <div className='social' data-aos="zoom-in">
+              <div className='social-container'>
+                <ul>
+                  {social.map((social, index) => {
+                    return (
+                      <li className='social-item' key={index}>
+                        <a href={social.url}>{social.icon}</a>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
             </div>
           </div>
           )

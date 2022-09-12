@@ -17,7 +17,7 @@ export const data = {
             url: "home"
         },
         {
-            title: "About Me",
+            title: "About",
             url: "about"
         },
         {
@@ -106,10 +106,10 @@ export const data = {
                 Go! as Backend and on localhost MongoDB was used.`,
         },
     ],
-    footer: [
+    social: [
         {
             title: "GitHub",
-            icon: <FaGithub />,
+            icon: <FaGithub  />,
             url: "https://github.com/ArturoJCastilloZ?tab=repositories"
         },
         {

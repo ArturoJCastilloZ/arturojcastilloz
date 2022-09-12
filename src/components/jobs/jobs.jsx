@@ -9,7 +9,7 @@ const Jobs = ({jobs}) => {
       <div className='jobs-items'>
         {jobs.map((jobs, index) => {
               return (
-                <div className='jobs-items-item' data-aos="flip-up" key={index}>
+                <div className='jobs-items-item' data-aos="zoom-in" key={index}>
                   <div className='jobs-dot'></div>
                     <div className='jobs-items-item-date'>{jobs.date}</div>
                     <div className='jobs-content'>

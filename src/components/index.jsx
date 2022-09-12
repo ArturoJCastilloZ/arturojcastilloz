@@ -11,7 +11,7 @@ import '../styles/index.scss';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-const { header, footer, hero, about, studies, jobs } = data;
+const { header, social, hero, about, studies, jobs } = data;
 
 const Index = () => {
     useEffect(() => {
@@ -20,12 +20,12 @@ const Index = () => {
     return (
         <div>
             <Header header={header} />
-            <Hero hero={hero} />
-            <About about={about} footer={footer} />
+            <Hero hero={hero} social={social}/>
+            <About about={about} />
             <Studies studies={studies} />
             <Jobs jobs={jobs}/>
             {/* <Projects project={project}/> */}
-            <Footer footer={footer}/>
+            <Footer social={social}/>
         </div>
     );
 };

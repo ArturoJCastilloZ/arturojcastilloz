@@ -1,17 +1,17 @@
 import React from 'react'
 import '../../styles/components/footer/footer.scss'
 
-const Footer = ({footer}) => {
+const Footer = ({social}) => {
   const date = new Date();
   const now = date.getFullYear();
   return (
     <div className='footer'>
       <div className='footer-container'>
         <ul>
-          {footer.map((footer, index) => {
+          {social.map((social, index) => {
             return (
               <li className='footer-item' key={index}>
-                <a href={footer.url}>{footer.icon}</a>
+                <a href={social.url}>{social.icon}</a>
               </li>
             )
           })}

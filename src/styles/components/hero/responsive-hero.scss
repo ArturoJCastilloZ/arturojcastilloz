@@ -20,4 +20,29 @@
             }
         }
     }
+    .social {
+        padding: 1rem 0;
+        &-container {
+            & ul {
+                text-align: center;
+                & li {
+                    justify-content: center;
+                    padding: 0 1rem;
+                    & a {
+                        font-size: 25px;
+                        transition: all .2s;
+                        &:hover {
+                            padding-bottom: 12px;
+                            color: $secondary-dark;
+                            border-bottom: 3px solid $secondary-color;
+                        }
+                    }
+                }
+            }
+            &-bottom {
+                text-align: center;
+                padding-top: 3rem;
+            }
+        }
+    }
 }

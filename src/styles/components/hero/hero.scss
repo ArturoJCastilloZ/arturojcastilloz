@@ -60,5 +60,32 @@
     }
 }
 
+.social {
+    padding: 3rem 0;
+    &-container {
+        & ul {
+            display: flex;
+            justify-content: flex-start;
+            & li {
+                padding: 0 3rem;
+                & a {
+                    color: #ffffff;
+                    font-size: 35px;
+                    transition: all .2s;
+                    &:hover {
+                        padding-bottom: 12px;
+                        color: $secondary-dark;
+                        border-bottom: 3px solid $secondary-color;
+                    }
+                }
+            }
+        }
+        &-bottom {
+            text-align: center;
+            padding-top: 3rem;
+        }
+    }
+}
+
 /* ########## IMPORT RESPONSIVE FILE ########## */
 @import './responsive-hero.scss';
