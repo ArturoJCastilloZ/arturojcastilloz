@@ -29,6 +29,10 @@ export const data = {
             url: "jobs"
         },
         {
+            title: "Skills",
+            url: "skills"
+        },
+        {
             title: "Projects",
             url: "projects"
         },
@@ -127,6 +131,43 @@ export const data = {
             icon: <FaWhatsapp />,
             url: "https://api.whatsapp.com/send?phone=5218116069640"
         }
+    ],
+    skills: [
+        {
+            level: "35",
+            skil: "Reactjs",
+            color: "#04fcfc",
+        },
+        {
+            level: "40",
+            skil: "SASS",
+            color: "#ff0099",
+        },
+        {
+            level: "45",
+            skil: "CSS",
+            color: "#3fff00",
+        },
+        {
+            level: "25",
+            skil: "JS",
+            color: "#fcf404",
+        },
+        {
+            level: "25",
+            skil: "PHP",
+            color: "#5390ff",
+        },
+        {
+            level: "25",
+            skil: "MySql",
+            color: "#ef00ff",
+        },
+        {
+            level: "20",
+            skil: "Laravel",
+            color: "#FF0000",
+        },
     ],
     projects: [
         {

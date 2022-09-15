@@ -1,13 +1,13 @@
 @import '../../responsive.scss';
 
-@include media-up(lm){
+@include media-up(lg){
     .about {
         &-container {
             grid-template-columns: 1fr;
             width: 100%;
             & > img {
                 padding: 0 0 2rem 0;
-                width: 90vw;
+                // width: 90vw;
                 border-radius: 0;
             }
             & > .col-2 {

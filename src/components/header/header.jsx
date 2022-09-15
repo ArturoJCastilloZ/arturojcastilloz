@@ -1,17 +1,12 @@
 import React from 'react'
 import logo from '../../assets/logo.png'
-import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-scroll';
 import '../../styles/components/header/header.scss';
 
-const Header = ({header}) => {
-  const [isOpen, setIsOpen] = useState(false)
-  const handleClick = () => setIsOpen(!isOpen)
-  const closeMenu = () => setIsOpen(false)
-
+const Header = ({header, handleClick, closeMenu, isOpen, color}) => {
   return (
-    <div className='header'>
+    <div className={color ? 'header header-bg' : 'header'}>
       <nav className='header-navbar'>
         <Link to="home" spy={true} smooth={true} offset={-100} duration={700} className='logo'>
           <img src={logo} alt="logo" />

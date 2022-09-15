@@ -8,7 +8,7 @@ const Projects = ({projects}) => {
     <div className='projects' id='projects'>
       <div className='projects-container'>
         <h2 data-aos="zoom-in">Projects</h2>
-        <span className='line'></span>
+        <span className='line' data-aos="zoom-in"></span>
         <div className='projects-content'>
           {projects.map((projects, index) => {
             return (
