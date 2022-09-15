@@ -14,27 +14,33 @@ export const data = {
     header: [
         {
             title: "Home",
-            url: "home"
+            url: "home",
+            offset: '100'
         },
         {
             title: "About",
-            url: "about"
+            url: "about",
+            offset: '-0'
         },
         {
             title: "Studies",
-            url: "studies"
+            url: "studies",
+            offset: '-1'
         },
         {
             title: "Jobs",
-            url: "jobs"
+            url: "jobs",
+            offset: '-1'
         },
         {
             title: "Skills",
-            url: "skills"
+            url: "skills",
+            offset: '-1'
         },
         {
             title: "Projects",
-            url: "projects"
+            url: "projects",
+            offset: '-1'
         },
     ],
     hero: [
@@ -114,27 +120,31 @@ export const data = {
         {
             title: "GitHub",
             icon: <FaGithub  />,
-            url: "https://github.com/ArturoJCastilloZ?tab=repositories"
+            url: "https://github.com/ArturoJCastilloZ?tab=repositories",
+            color: '#ff8000'
         },
         {
             title: "LinkedIn",
             icon: <FaLinkedin />,
-            url: "https://www.linkedin.com/in/castillo93/"
+            url: "https://www.linkedin.com/in/castillo93/",
+            color: '#0072b1'
         },
         {
             title: "Correo",
             icon: <FaMailBulk />,
-            url: "mailto:castillo.arturo93@hotmail.com"
+            url: "mailto:castillo.arturo93@hotmail.com",
+            color: '#e3d002'
         },
         {
             title: "WhatsApp",
             icon: <FaWhatsapp />,
-            url: "https://api.whatsapp.com/send?phone=5218116069640"
+            url: "https://api.whatsapp.com/send?phone=5218116069640",
+            color: '#3eff5f'
         }
     ],
     skills: [
         {
-            level: "35",
+            level: "30",
             skil: "Reactjs",
             color: "#04fcfc",
         },

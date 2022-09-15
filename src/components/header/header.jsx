@@ -18,7 +18,7 @@ const Header = ({header, handleClick, closeMenu, isOpen, color}) => {
           {header.map((header, index) => {
             return (
             <li className='header-navbar-menu-item' key={index} data-aos="zoom-in">
-              <Link to={header.url} spy={true} smooth={true} offset={-100} duration={700} onClick={closeMenu}>{header.title}</Link>
+              <Link to={header.url} spy={true} smooth={true} offset={-header.offset} duration={700} onClick={closeMenu}>{header.title}</Link>
             </li>              
             )
           })}            

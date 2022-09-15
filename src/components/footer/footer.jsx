@@ -10,7 +10,7 @@ const Footer = ({social}) => {
         <ul>
           {social.map((social, index) => {
             return (
-              <li className='footer-item' key={index}>
+              <li className='footer-item' key={index} style={{'--color': social.color}}>
                 <a href={social.url}>{social.icon}</a>
               </li>
             )

@@ -19,7 +19,8 @@
                     color: #ffffff;
                     &:hover {
                         padding-bottom: 12px;
-                        border-bottom: 3px solid $secondary-color;
+                        color: var(--color);
+                        border-bottom: 3px solid var(--color);
                     }
                 }
             }
