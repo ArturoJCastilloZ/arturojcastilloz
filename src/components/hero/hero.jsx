@@ -28,6 +28,7 @@ const Hero = ({hero, social}) => {
                     return (
                       <li className='social-item' key={index} style={{'--color':social.color}}>
                         <a href={social.url}>{social.icon}</a>
+                        <a href={social.url_d} download={social.title_d}>{social.icon_d}</a>
                       </li>
                     )
                   })}

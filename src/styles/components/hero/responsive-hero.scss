@@ -33,8 +33,8 @@
                         transition: all .2s;
                         &:hover {
                             padding-bottom: 12px;
-                            color: $secondary-dark;
-                            border-bottom: 3px solid $secondary-color;
+                            color: var(--color);
+                            border-bottom: 3px solid var(--color);
                         }
                     }
                 }

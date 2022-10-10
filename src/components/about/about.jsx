@@ -1,26 +1,23 @@
 import React from 'react'
-import arturo from '../../assets/img1.png';
 import '../../styles/components/about/about.scss';
 
-const About = () => {
+const About = ({about}) => {
   return (
     <div className='about' id='about'>
-      <div className='about-container'>
-        <img data-aos="zoom-in" src={arturo} alt="arturo" />
-        <div data-aos="zoom-in" className='col-2'>
-          <h2>About</h2>
-          <span className='line'></span>
-          <p>Software development and management engineer</p>
-          <p>I consider myself a person with the ability to web 
-            development with different languages, frameworks and 
-            libraries, even to be learning and, at the same time, 
-            to be developing a project. I am a person committed to 
-            what I do, I like to work orderly and research on 
-            new technologies, I consider that my work is efficient,
-             effective and of quality.</p>
-            {/* <button className='button'>Explore more</button> */}
-        </div>
-      </div>
+      {about.map((about, index) => {
+        return (
+          <div className='about-container' key={index}>
+              <img data-aos="zoom-in" src={about.img} alt={about.profesion} />
+              <div data-aos="zoom-in" className='col-2'>
+                <h2>About</h2>
+                <span className='line'></span>
+                <p>{about.profesion}</p>
+                <p>{about.description}</p>
+                  {/* <a className='button' href={about.document} download>Download resume</a> */}
+              </div>
+          </div>
+        )
+      })}
     </div>
   )
 }

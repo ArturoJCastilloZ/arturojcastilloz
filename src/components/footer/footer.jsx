@@ -12,6 +12,7 @@ const Footer = ({social}) => {
             return (
               <li className='footer-item' key={index} style={{'--color': social.color}}>
                 <a href={social.url}>{social.icon}</a>
+                <a href={social.url_d}>{social.icon_d}</a>
               </li>
             )
           })}

@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaMailBulk, FaWhatsapp } from 'react-icons/fa';
+import { FaDownload, FaFileDownload, FaGithub, FaLinkedin, FaMailBulk, FaWhatsapp } from 'react-icons/fa';
 import img from '../assets/img1.jpg';
 import miweb from '../assets/mi-web.png';
 import miweb2 from '../assets/miweb2.png';
@@ -9,6 +9,8 @@ import consiss from '../assets/consiss.jpg'
 import triplei from '../assets/triplei.png'
 import wild from '../assets/wild.jpg'
 import tecsa from '../assets/tecsa.jpg'
+import arturo from '../assets/img1.png';
+import resume from '../assets/resume.pdf';
 
 export const data = {
     header: [
@@ -57,11 +59,16 @@ export const data = {
     ],
     about: [
         {
-            name: "Arturo de Jesús Castillo Zapata",
+            img: arturo,
             profesion: "Software development and management engineer",
-            description: `I consider myself a person with the ability to
-            web development with different languages, frameworks and libraries, even to be learning and, at the same time, to be developing a project.
-            I am a person committed to what I do, I like to work orderly and research on new technologies, I consider that my work is efficient, effective and of quality.`
+            description: `I consider myself a person with the ability to web 
+            development with different languages, frameworks and 
+            libraries, even to be learning and, at the same time, 
+            to be developing a project. I am a person committed to 
+            what I do, I like to work orderly and research on 
+            new technologies, I consider that my work is efficient,
+             effective and of quality.`,
+            document: resume 
         }
     ],
     studies: [
@@ -140,6 +147,12 @@ export const data = {
             icon: <FaWhatsapp />,
             url: "https://api.whatsapp.com/send?phone=5218116069640",
             color: '#3eff5f'
+        },
+        {
+            title_d: "Arturo Castillo Resume",
+            icon_d: <FaFileDownload />,
+            url_d: resume,
+            color: '#00FFFF'
         }
     ],
     skills: [
