@@ -41,10 +41,10 @@ const Index = () => {
       }, [])
     return (
         <div>
-            <Header 
-                header={header} 
-                handleClick={handleClick} 
-                closeMenu={closeMenu} 
+            <Header
+                header={header}
+                handleClick={handleClick}
+                closeMenu={closeMenu}
                 isOpen={isOpen}
                 color={color}
             />

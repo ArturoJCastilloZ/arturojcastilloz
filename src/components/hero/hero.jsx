@@ -38,7 +38,6 @@ const Hero = ({hero, social}) => {
           </div>
           )
         })}
-        {/* <button href='/' className='button'>Call us</button> */}
       </div>
     </div>
   )

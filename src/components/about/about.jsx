@@ -13,7 +13,6 @@ const About = ({about}) => {
                 <span className='line'></span>
                 <p>{about.profesion}</p>
                 <p>{about.description}</p>
-                  {/* <a className='button' href={about.document} download>Download resume</a> */}
               </div>
           </div>
         )

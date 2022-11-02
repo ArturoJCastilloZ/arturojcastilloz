@@ -11,6 +11,14 @@ import wild from '../assets/wild.jpg'
 import tecsa from '../assets/tecsa.jpg'
 import arturo from '../assets/img1.png';
 import resume from '../assets/resume.pdf';
+import react from '../assets/react.png';
+import css from '../assets/css.png';
+import js from '../assets/js.png';
+import laravel from '../assets/laravel.png';
+import mysql from '../assets/mysql.png';
+import python from '../assets/python.png';
+import sass from '../assets/sass.png';
+import php from '../assets/php.png';
 
 export const data = {
     header: [
@@ -47,7 +55,7 @@ export const data = {
     ],
     hero: [
         {
-            greeting: "Hello guest!", 
+            greeting: "Hello guest!",
             author: "I am Arturo Castillo",
             presentation: "Software development and management engineer",
             image: img,
@@ -61,14 +69,14 @@ export const data = {
         {
             img: arturo,
             profesion: "Software development and management engineer",
-            description: `I consider myself a person with the ability to web 
-            development with different languages, frameworks and 
-            libraries, even to be learning and, at the same time, 
-            to be developing a project. I am a person committed to 
-            what I do, I like to work orderly and research on 
+            description: `I consider myself a person with the ability to web
+            development with different languages, frameworks and
+            libraries, even to be learning and, at the same time,
+            to be developing a project. I am a person committed to
+            what I do, I like to work orderly and research on
             new technologies, I consider that my work is efficient,
              effective and of quality.`,
-            document: resume 
+            document: resume
         }
     ],
     studies: [
@@ -91,7 +99,7 @@ export const data = {
             title: "Web Developer",
             institution: "Consiss",
             date: "July 2022 to the present",
-            activity: `Developing new projects with the technology that best suits the requirement, 
+            activity: `Developing new projects with the technology that best suits the requirement,
             as well as giving maintenance to projects already created.`,
         },
         {
@@ -99,7 +107,7 @@ export const data = {
             title: "Junior Developer",
             institution: "v09&Co.",
             date: "April to July 2022",
-            activity: `Make updates or modifications to the Restology and Supercolchones pages, 
+            activity: `Make updates or modifications to the Restology and Supercolchones pages,
                 which were created in Magento2.`,
         },
         {
@@ -107,9 +115,9 @@ export const data = {
             title: "Junior Developer",
             institution: "Tecsa Contact Center",
             date: "January to April 2022",
-            activity: `Develop web pages requested through tickets by the Continuous Improvement team 
-                for departments such as Human Resources, Technical Support, even to motivate advisors 
-                with different dynamics taught by the Marketing department. The developments are 
+            activity: `Develop web pages requested through tickets by the Continuous Improvement team
+                for departments such as Human Resources, Technical Support, even to motivate advisors
+                with different dynamics taught by the Marketing department. The developments are
                 done with PHP, Laravel, Tailwindcss, Javascript, JQuery and Ajax Requests.`,
         },
         {
@@ -117,9 +125,9 @@ export const data = {
             title: "Web Development Intern",
             institution: "Triple i Soluciones",
             date: "August to December 2021",
-            activity: `This company has a platform to manage tasks in a very orderly manner, 
-                said platform is called Fluxy. As a Web Development Intern, I made updates, 
-                fixes and modifications to this platform. Fluxy was created with Angular as FrontEnd, 
+            activity: `This company has a platform to manage tasks in a very orderly manner,
+                said platform is called Fluxy. As a Web Development Intern, I made updates,
+                fixes and modifications to this platform. Fluxy was created with Angular as FrontEnd,
                 Go! as Backend and on localhost MongoDB was used.`,
         },
     ],
@@ -157,40 +165,45 @@ export const data = {
     ],
     skills: [
         {
-            level: "30",
-            skil: "Reactjs",
-            color: "#04fcfc",
+            skill: "Reactjs",
+            image: react,
+            width: "120px"
         },
         {
-            level: "40",
-            skil: "SASS",
-            color: "#ff0099",
+            skill: "SASS",
+            image: sass,
+            width: "130px"
         },
         {
-            level: "45",
-            skil: "CSS",
-            color: "#3fff00",
+            skill: "CSS",
+            image: css,
+            width: "90px"
         },
         {
-            level: "25",
-            skil: "JS",
-            color: "#fcf404",
+            skill: "JS",
+            image: js,
+            width: "100px"
         },
         {
-            level: "25",
-            skil: "PHP",
-            color: "#5390ff",
+            skill: "PHP",
+            image: php,
+            width: "130px"
         },
         {
-            level: "25",
-            skil: "MySql",
-            color: "#ef00ff",
+            skill: "MySql",
+            image: mysql,
+            width: "160px"
         },
         {
-            level: "20",
-            skil: "Laravel",
-            color: "#FF0000",
+            skill: "Laravel",
+            image: laravel,
+            width: "230px"
         },
+        {
+            skill: "Python",
+            image: python,
+            width: "200px"
+        }
     ],
     projects: [
         {
@@ -198,8 +211,8 @@ export const data = {
             title: "My first web CV",
             url: "https://arturocastillocv.vercel.app/",
             repo: "https://github.com/ArturoJCastilloZ/arturocastillocv",
-            description: `My first hosted web development was my resume. 
-                I liked how my page was taking shape while I was learning to use the reactjs framework. 
+            description: `My first hosted web development was my resume.
+                I liked how my page was taking shape while I was learning to use the reactjs framework.
                 Although it is something basic and simple, it is motivating to see how to get things out even without having prior knowledge of this framework.`,
         },
         {
@@ -221,7 +234,7 @@ export const data = {
             title: "Viakable e-commerce",
             url: "https://viakable.pcel.com/",
             repo: "https://viakable.pcel.com/",
-            description: `E-commerce site recently created for the company Viakable. 
+            description: `E-commerce site recently created for the company Viakable.
                 This website was created by the PCEL team of developers, to which I currently belong, using Opencart, which is a specialized Framework for e-commerce. `
         }
     ]
