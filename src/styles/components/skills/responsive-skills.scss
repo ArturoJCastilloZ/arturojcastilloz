@@ -9,13 +9,21 @@
             width: 100%;
             gap: 5px;
             display: grid;
-            grid-template-columns: repeat(2, 160px);
+            grid-template-columns: repeat(4, 160px);
             &-card {
                 width: 100%;
                 & > img {
                     width: calc(var(--width) - 10px);
                 }
             }
+        }
+    }
+}
+
+@include media-up(m){
+    .skills{
+        &-container {
+            grid-template-columns: repeat(2, 160px);
         }
     }
 }
