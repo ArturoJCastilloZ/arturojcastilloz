@@ -1,4 +1,4 @@
-import { FaDownload, FaFileDownload, FaGithub, FaLinkedin, FaMailBulk, FaWhatsapp } from 'react-icons/fa';
+import { FaFileDownload, FaGithub, FaLinkedin, FaMailBulk, FaWhatsapp } from 'react-icons/fa';
 import img from '../assets/img1.jpg';
 import miweb from '../assets/mi-web.png';
 import miweb2 from '../assets/miweb2.png';
@@ -57,7 +57,7 @@ export const data = {
         {
             greeting: "Hello guest!",
             author: "I am Arturo Castillo",
-            presentation: "Software development and management engineer",
+            presentation: "Fullstack Developer",
             image: img,
             mun: "Santa Catarina",
             cdest: "Monterrey, Nuevo León",
