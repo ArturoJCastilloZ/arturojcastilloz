@@ -6,14 +6,14 @@ import About from './about/about';
 import Studies from './studies/studies';
 import Jobs from './jobs/jobs';
 import Skills from './skills/skills';
-import Projects from './projects/projects';
+// import Projects from './projects/projects';
 import Footer from './footer/footer';
 import { data } from '../mock/mock';
 import '../styles/index.scss';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-const { header, social, hero, about, studies, jobs, projects, skills } = data;
+const { header, social, hero, about, studies, jobs, skills } = data;
 
 const Index = () => {
     /** change header color when scroll */
@@ -53,7 +53,7 @@ const Index = () => {
             <Studies studies={studies} />
             <Jobs jobs={jobs}/>
             <Skills skills={skills}/>
-            <Projects projects={projects}/>
+            {/* <Projects projects={projects}/> */}
             <Footer social={social}/>
         </div>
     );

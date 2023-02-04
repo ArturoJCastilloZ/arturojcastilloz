@@ -47,11 +47,11 @@ export const data = {
             url: "skills",
             offset: '-1'
         },
-        {
-            title: "Projects",
-            url: "projects",
-            offset: '-1'
-        },
+        // {
+        //     title: "Projects",
+        //     url: "projects",
+        //     offset: '-1'
+        // },
     ],
     hero: [
         {
@@ -59,8 +59,8 @@ export const data = {
             author: "I am Arturo Castillo",
             presentation: "Fullstack Developer",
             image: img,
-            mun: "Santa Catarina",
-            cdest: "Monterrey, Nuevo León",
+            // mun: "Santa Catarina",
+            // cdest: "Monterrey, Nuevo León",
             mun2: "García",
             cdest2: "Monterrey, Nuevo León",
         }
@@ -69,13 +69,14 @@ export const data = {
         {
             img: arturo,
             profesion: "Software development and management engineer",
-            description: `I consider myself a person with the ability to web
-            development with different languages, frameworks and
-            libraries, even to be learning and, at the same time,
-            to be developing a project. I am a person committed to
-            what I do, I like to work orderly and research on
-            new technologies, I consider that my work is efficient,
-             effective and of quality.`,
+            description: `I am a web developer with initial experience, 
+            I have knowledge of backend and frontend. 
+            I like, as frontend, to adapt my developments to be visited on any device, 
+            as well as give them a modern and creative design; 
+            And as backend I like to keep dynamic and reusable code, 
+            adapt requests and insert and extract data in a clean way. 
+            I am also a person who is constantly learning in order not to stagnate and to be able 
+            to provide a professional knowledge and work.`,
             document: resume
         }
     ],

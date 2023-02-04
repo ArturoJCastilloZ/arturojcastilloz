@@ -13,7 +13,7 @@ const Jobs = ({jobs}) => {
                   <div className='jobs-dot'></div>
                     <div className='jobs-items-item-date'>{jobs.date}</div>
                     <div className='jobs-content'>
-                      <img src={jobs.img} alt={jobs.institution} />
+                      {/* <img src={jobs.img} alt={jobs.institution} /> */}
                       <h3>{jobs.title}</h3>
                       <span>{jobs.institution}</span>
                       <p>{jobs.activity}</p>
