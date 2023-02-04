@@ -11,8 +11,8 @@ const Studies = ({studies}) => {
             {studies.map((studies, index) => {
               return (
                 <div className='studies-content-card' key={index}>
-                  {/* <img src={studies.img} alt={studies.institution} /> */}
-                  <p style={{ "fontSize": "23px" }}>{studies.title}</p>
+                  <img src={studies.img} alt={studies.institution} />
+                  <p>{studies.title}</p>
                   <p><span>{studies.institution}</span></p>
                   <p>{studies.date}</p>
                 </div>
