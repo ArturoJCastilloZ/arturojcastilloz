@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-import data from '../mock/adjcz.json';
 import '../styles/index.scss';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -23,8 +22,9 @@ import { SkillsContent } from '../components/skills/skills_content';
 import { Footer } from './footer/footer';
 import { FooterContent } from '../components/footer/footer_content';
 import { Resume } from '../components/footer/enlaces';
+import fetchData from '../controllers/services';
 
-const Index = () => {
+function Index() {
     /* mobile header */
     const [isOpen, setIsOpen] = useState(false)
     const handleClick = () => setIsOpen(!isOpen)
@@ -32,10 +32,45 @@ const Index = () => {
     /* close menu header */
     const closeMenu = () => setIsOpen(false)
 
-    /** effect AOS */
+    const [data, setData] = useState({
+        about: [],
+        docs: [],
+        header: [],
+        hero: [],
+        jobs: [],
+        skills: [],
+        social: [],
+        studies: [],
+    });
+
+    /** effect AOS y datos almacenados en estado */
     useEffect(() => {
         Aos.init({ duration: 3000 });
-      }, [])
+        async function fetchDataFromFirebase(){
+            const aboutData = await fetchData('/about');
+            const docsData = await fetchData('/docs');
+            const headerData = await fetchData('/header');
+            const heroData = await fetchData('/hero');
+            const jobsData = await fetchData('/jobs');
+            const skillsData = await fetchData('/skills');
+            const socialData = await fetchData('/social');
+            const studiesData = await fetchData('/studies');
+            setData({
+                about: aboutData,
+                docs: docsData,
+                header: headerData,
+                hero: heroData,
+                jobs: jobsData,
+                skills: skillsData,
+                social: socialData,
+                studies: studiesData,
+            });
+        }
+        fetchDataFromFirebase();
+    }, [])
+
+    const { about, docs, header, hero, jobs, skills, social, studies } = data;
+
 
     return (
         <div>
@@ -45,14 +80,14 @@ const Index = () => {
                     isOpen={isOpen}
                 >
                     <ListaDesordenada isOpen={isOpen}>
-                    {data.header.map((data, index) => {
+                    {header.map((headerData, index) => {
                         return (
                             <Li
                                 key={index}
-                                url={data.url}
-                                offset={data.offset}
+                                url={headerData.url}
+                                offset={headerData.offset}
                                 closeMenu={closeMenu}
-                                title={data.title}
+                                title={headerData.title}
                             />
                         )
                     })}
@@ -60,7 +95,7 @@ const Index = () => {
                 </Navbar>
             </Header>
             <Hero>
-                {data.hero.map((heroData, index) => {
+                {hero.map((heroData, index) => {
                     return (
                         <Content
                             key={index}
@@ -84,7 +119,7 @@ const Index = () => {
                                         />
                                         )
                                     })}
-                                {data.docs.map((dataDocs, index) => {
+                                {docs.map((dataDocs, index) => {
                                     return (
                                         <Resume
                                             key={index}
@@ -101,7 +136,7 @@ const Index = () => {
                 })}
             </Hero>
             <About>
-                {data.about.map((dataAbout, index) => {
+                {about.map((dataAbout, index) => {
                     return(
                         <ContentAbout
                             key={index}
@@ -113,7 +148,7 @@ const Index = () => {
                 })}
             </About>
             <Studies>
-                {data.studies.map((dataStudies, index) => {
+                {studies.map((dataStudies, index) => {
                     return (
                         <StudiesContent
                             key={index}
@@ -125,7 +160,7 @@ const Index = () => {
                 })}
             </Studies>
             <Jobs>
-                {data.jobs.map((dataJobs, index) => {
+                {jobs.map((dataJobs, index) => {
                     return (
                         <JobsContent
                             key={index}
@@ -138,7 +173,7 @@ const Index = () => {
                 })}
             </Jobs>
             <Skills>
-                {data.skills.map((dataSkills, index) => {
+                {skills.map((dataSkills, index) => {
                     return (
                         <SkillsContent
                             key={index}
@@ -151,7 +186,7 @@ const Index = () => {
             </Skills>
             {/* <Projects projects={projects}/> */}
             <Footer>
-                {data.social.map((dataFooter, index) => {
+                {social.map((dataFooter, index) => {
                     return (
                         <FooterContent
                             key={index}
@@ -162,7 +197,7 @@ const Index = () => {
                         />
                         )
                     })}
-                {data.docs.map((dataDocs, index) => {
+                {docs.map((dataDocs, index) => {
                     return (
                         <Resume
                             key={index}
