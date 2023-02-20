@@ -1,9 +1,9 @@
-const Social = (props) => {
+const Social = ({ children }) => {
   return (
     <div className='social' data-aos="zoom-in">
         <div className='social-container'>
             <ul>
-                {props.children}
+                {children}
             </ul>
         </div>
     </div>

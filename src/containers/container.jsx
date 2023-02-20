@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-import '../styles/index.scss';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { Header } from './header/header';

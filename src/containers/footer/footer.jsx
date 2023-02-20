@@ -1,13 +1,13 @@
 import '../../styles/components/footer/footer.scss'
 
-const Footer = (props) => {
+const Footer = ({ children }) => {
   const date = new Date();
   const now = date.getFullYear();
   return (
     <div className='footer'>
       <div className='footer-container'>
         <ul>
-          {props.children}
+          {children}
         </ul>
         <div className='footer-container-bottom'>
           <span className='line'></span>

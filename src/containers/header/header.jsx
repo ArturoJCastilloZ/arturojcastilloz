@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../../styles/components/header/header.scss';
 
-const Header = (props) => {
+const Header = ({ children }) => {
     /** change header color when scroll */
     const [color, setColor] = useState(false)
     const changeColor = () => {
@@ -16,7 +16,7 @@ const Header = (props) => {
 
   return (
     <div className={color ? 'header header-bg' : 'header'}>
-      {props.children}
+      {children}
     </div>
   )
 }

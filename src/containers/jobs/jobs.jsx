@@ -1,12 +1,12 @@
 import '../../styles/components/jobs/jobs.scss'
 
-const Jobs = (props) => {
+const Jobs = ({ children }) => {
   return (
     <div className='jobs' id='jobs'>
       <h2 data-aos="zoom-in">Jobs</h2>
       <span className='line'></span>
       <div className='jobs-items'>
-        {props.children}
+        {children}
       </div>
     </div>
   )

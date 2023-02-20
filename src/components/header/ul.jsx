@@ -1,9 +1,9 @@
 
 
-const ListaDesordenada = (props) => {
+const ListaDesordenada = ({ isOpen, children }) => {
   return (
-    <ul className={props.isOpen ? 'header-navbar-menu active' : 'header-navbar-menu'}>
-        {props.children}
+    <ul className={isOpen ? 'header-navbar-menu active' : 'header-navbar-menu'}>
+        {children}
     </ul>
   )
 }

@@ -1,9 +1,9 @@
 import '../../styles/components/hero/hero.scss'
 
-const Hero = (props) => {
+const Hero = ({ children }) => {
   return (
     <div className='hero' id='home'>
-      {props.children}
+      {children}
     </div>
   )
 }

@@ -1,17 +1,17 @@
-const Content = (props) => {
+const Content = ({ greeting, author, presentation, mun, cdest, children }) => {
   return (
     <div className='hero-content'>
         <div data-aos="zoom-in">
-            <p>{props.greeting} </p>
-            <p>{props.author}</p>
-            <p>{props.presentation}</p>
+            <p>{greeting} </p>
+            <p>{author}</p>
+            <p>{presentation}</p>
             <div data-aos="zoom-in" className='hero-content-dir'>
                 <ul>
-                    <li>{props.mun}</li>
-                    <li>{props.cdest}</li>
+                    <li>{mun}</li>
+                    <li>{cdest}</li>
                 </ul>
             </div>
-            {props.children}
+            {children}
         </div>
   </div>
   )
