@@ -2,6 +2,9 @@
 
 @include media-up(lg){
     .skills {
+        & h2 {
+            font-size: 2.3rem;
+        }
         flex-direction: column;
         justify-content: center;
         align-items: center;

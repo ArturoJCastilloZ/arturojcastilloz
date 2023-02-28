@@ -2,6 +2,9 @@
 
 @include media-up(lg){
     .jobs {
+        & > h2 {
+            font-size: 2.5rem;
+        }
         &-items {
             width: 100%;
             &::before{

@@ -7,6 +7,7 @@
     height: 100vh;
     width: 100%;
     position: relative;
+    padding-top: 5em;
     &::before {
         content: '';
         background: url('../../../assets/bg.png') no-repeat center center/cover;
@@ -38,7 +39,7 @@
         }
         & p:first-child, p:nth-child(2) {
             font-weight: 700;
-            font-size: 5rem;
+            font-size: 4rem;
             font-family: $font-primary-family;
         }
         & p:nth-child(3) {
@@ -67,10 +68,10 @@
             display: flex;
             justify-content: flex-start;
             & li {
-                padding: 0 3rem;
+                padding: 0 1rem;
                 & a {
                     color: #ffffff;
-                    font-size: 35px;
+                    font-size: 30px;
                     transition: all .2s;
                     &:hover {
                         padding-bottom: 12px;
