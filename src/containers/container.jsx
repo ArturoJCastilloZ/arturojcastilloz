@@ -169,7 +169,7 @@ function Index() {
                             activity={dataJobs.activity}
                         />
                     )
-                })}
+                }).reverse()}
             </Jobs>
             <Skills>
                 {skills.map((dataSkills, index) => {
