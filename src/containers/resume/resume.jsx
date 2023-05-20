@@ -1,5 +1,5 @@
 import * as Icons from 'react-icons/fa'
-import { docs } from '../../mock/images'
+import { docs } from '../../images/images'
 
 const Resume = ({ icon, url, title, color }) => {
     if (!Icons[icon]){

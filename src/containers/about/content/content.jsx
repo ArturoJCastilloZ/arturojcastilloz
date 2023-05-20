@@ -1,4 +1,4 @@
-import { images } from "../../mock/images"
+import { images } from "../../../images/images"
 
 const ContentAbout = ({ image, profesion, description }) => {
   const Image = images[image]

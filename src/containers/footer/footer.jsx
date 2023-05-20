@@ -1,13 +1,36 @@
 import '../../styles/components/footer/footer.scss'
+import { FooterContent } from './content/content';
+import { Resume } from '../resume/resume';
 
-const Footer = ({ children }) => {
+const Footer = ({ social, docs }) => {
   const date = new Date();
   const now = date.getFullYear();
   return (
     <div className='footer'>
       <div className='footer-container'>
         <ul>
-          {children}
+          {social.map((dataSocial, index) => {
+            return (
+              <FooterContent
+                key={index}
+                color={dataSocial.Color}
+                icon={dataSocial.Icono}
+                url={dataSocial.Url}
+                title={dataSocial.Titulo}
+              />
+            )
+          })}
+          {docs.map((dataDoc, index) => {
+            return (
+              <Resume
+                key={index}
+                color={dataDoc.Color}
+                icon={dataDoc.Icono}
+                url={dataDoc.Archivo}
+                title={dataDoc.Titulo}
+              />
+            )
+          })}
         </ul>
         <div className='footer-container-bottom'>
           <span className='line'></span>
