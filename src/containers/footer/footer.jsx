@@ -20,17 +20,7 @@ const Footer = ({ social, docs }) => {
               />
             )
           })}
-          {docs.map((dataDoc, index) => {
-            return (
-              <Resume
-                key={index}
-                color={dataDoc.Color}
-                icon={dataDoc.Icono}
-                url={dataDoc.Archivo}
-                title={dataDoc.Titulo}
-              />
-            )
-          })}
+          <Resume />
         </ul>
         <div className='footer-container-bottom'>
           <span className='line'></span>

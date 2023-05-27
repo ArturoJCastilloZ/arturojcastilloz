@@ -1,17 +1,23 @@
-import * as Icons from 'react-icons/fa'
-import { docs } from '../../images/images'
+import { FaFileDownload } from 'react-icons/fa'
+import { getResume } from '../../controllers/firebaseData'
 
-const Resume = ({ icon, url, title, color }) => {
-    if (!Icons[icon]){
-        throw new Error(`Icono invalido: ${icon}`)
+const Resume = () => {
+    const handleDownloadResume = async (event) => {
+        event.preventDefault();
+        try {
+            await getResume();
+        } catch (err) {
+            console.error("Ocurrió un error al descargar el archivo:", err);
+        }
     }
-    const Icon = Icons[icon]
-    const document = docs[url]
-  return (
-    <li className='footer-item' style={{'--color': color, "cursor": "pointer"}}>
-        <a href={document} download={title}><Icon /></a>
-    </li>
-  )
+    return (
+        <li className='footer-item' style={{ 'color': "#00FFFF", "cursor": "pointer" }}>
+            {/* eslint-disable-next-line */}
+            <a href="javascript:void(0);" onClick={handleDownloadResume} download="Arturo_Castillo_Resume.pdf">
+                <FaFileDownload />
+            </a>
+        </li>
+    )
 }
 
-export {Resume}
+export { Resume }

@@ -28,17 +28,7 @@ const Hero = ({ hero, social, docs }) => {
                                     />
                                 )
                             })}
-                            {docs.map((dataDoc, index) => {
-                                return (
-                                    <Resume
-                                        key={index}
-                                        color={dataDoc.Color}
-                                        icon={dataDoc.Icono}
-                                        url={dataDoc.Archivo}
-                                        title={dataDoc.Titulo}
-                                    />
-                                )
-                            })}
+                            <Resume />
                         </UlSocial>
                     </Content>
                 )
