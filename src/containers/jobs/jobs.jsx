@@ -13,7 +13,7 @@ const Jobs = ({ jobs }) => {
           return (
             <JobsContent
               key={index}
-              title={data.Titutlo}
+              title={data.Puesto}
               institution={data.Empresa}
               activity={data.Actividades}
               start={data.Inicio}
