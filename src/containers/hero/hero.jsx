@@ -4,7 +4,7 @@ import { UlSocial } from './ul_social/ul_social'
 import { LiSocial } from './li_social/li_social'
 import { Resume } from '../resume/resume'
 
-const Hero = ({ hero, social, docs }) => {
+const Hero = ({ hero, social }) => {
     return (
         <div className='hero' id='home'>
             {hero.map((dataHero, index) => {
