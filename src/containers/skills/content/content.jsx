@@ -1,10 +1,7 @@
-import { images } from "../../../images/images"
-
 const SkillsContent = ({ image, skill, width }) => {
-    const Image = images[image]
   return (
     <div className="skills-container-card" data-aos="zoom-in">
-        <img src={Image} alt={skill} style={{"--width":width}} />
+        <img src={image} alt={skill} style={{"--width":width}} />
     </div>
   )
 }

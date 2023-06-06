@@ -22,3 +22,19 @@ export async function getResume() {
         console.error("Ocurrió un error al descargar el archivo:", error);
     }
 }
+
+export async function fetchImages(imageNames){
+    try {
+        const downloadUrlImages = await Promise.all(
+            imageNames.map( async (imageName) => {
+                const fileRef = ref(storage, `assets/${imageName}`);
+                const urlImage = await getDownloadURL(fileRef);
+                return urlImage;
+            })
+        );
+        return downloadUrlImages;
+    } catch (err) {
+        console.log("Ocurrió un error al obtener la URL de descarga:", err);
+        return [];
+    }
+}

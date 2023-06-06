@@ -13,7 +13,7 @@ const Resume = () => {
     return (
         <li className='footer-item' style={{ 'color': "#00FFFF", "cursor": "pointer" }}>
             {/* eslint-disable-next-line */}
-            <a href="javascript:void(0);" onClick={handleDownloadResume} download="Arturo_Castillo_Resume.pdf">
+            <a href="#!" onClick={handleDownloadResume} download="Arturo_Castillo_Resume.pdf">
                 <FaFileDownload />
             </a>
         </li>
