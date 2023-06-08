@@ -19,8 +19,8 @@
                     color: #ffffff;
                     &:hover {
                         padding-bottom: 12px;
-                        color: var(--color);
-                        border-bottom: 3px solid var(--color);
+                        color: #00FFFF;
+                        border-bottom: 3px solid #00FFFF;
                     }
                 }
             }
@@ -30,6 +30,17 @@
         }
     }
 }
+
+// .footer-item {
+//     color: #00FFFF;
+//     cursor: pointer;
+//     transition: all .2s;
+//     &:hover {
+//         padding-bottom: 12px;
+//         color: #00FFFF;
+//         border-bottom: 3px solid #00FFFF;
+//     }
+// }
 
 .line {
     margin-bottom: 1rem;

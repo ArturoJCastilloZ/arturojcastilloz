@@ -20,11 +20,11 @@ const Header = ({ handleClick, isOpen, closeMenu, headerList }) => {
 
     useEffect(() => {
         const fetchImageData = async () => {
-          const aboutData = await fetchImages(['logo.png']);
-          setImages(aboutData)
+            const aboutData = await fetchImages(['logo.png']);
+            setImages(aboutData)
         };
         fetchImageData();
-      }, [headerList])
+    }, [headerList])
 
     window.addEventListener('scroll', changeColor)
 
@@ -33,21 +33,21 @@ const Header = ({ handleClick, isOpen, closeMenu, headerList }) => {
             <Navbar handleClick={handleClick} isOpen={isOpen} image={images[0]}>
                 <ListaDesordenada isOpen={isOpen}>
                     {headerList
-                    .sort((a, b) => a._id - b._id)
-                    .map((data, index) => {
-                        return (
-                            <Enlaces
-                            key={index}
-                            url={data.Enlace}
-                            offset={data.offset}
-                            closeMenu={closeMenu}
-                            title={data.Titulo} />
-                        )
-                    })}
+                        .sort((a, b) => a._id - b._id)
+                        .map((data, index) => {
+                            return (
+                                <Enlaces
+                                    key={index}
+                                    url={data.Enlace}
+                                    offset={data.offset}
+                                    closeMenu={closeMenu}
+                                    title={data.Titulo} />
+                            )
+                        })}
                 </ListaDesordenada>
             </Navbar>
         </div>
     )
 }
 
-export {Header}
+export { Header }
