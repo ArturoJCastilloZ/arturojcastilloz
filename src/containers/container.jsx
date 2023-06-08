@@ -29,8 +29,6 @@ function Index() {
             studies.length > 0
         ) {
             setisLoading(false)
-            // setTimeout(() => {
-            // }, 2000);
         };
     }, [about, header, hero, jobs, skills, social, studies])
 
@@ -42,11 +40,9 @@ function Index() {
                 closeMenu={closeMenu}
                 headerList={header}
             />
-            {isLoading ? (
-                <Loading isLoading={isLoading} />
-                ) : (
+            {isLoading ? (<Loading isloading={isLoading} />) : (
                 <>
-                    <Loading isLoading={isLoading} />
+                    <Loading isloading={isLoading} />
                     <Hero
                         hero={hero}
                         social={social}

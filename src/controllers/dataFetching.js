@@ -11,7 +11,6 @@ const useDataFetching = () => {
         skills: [],
         social: [],
         studies: [],
-        loading: true
     });
 
     useEffect(() => {
@@ -34,8 +33,7 @@ const useDataFetching = () => {
             jobs: jobsData,
             skills: skillsData,
             social: socialData,
-            studies: studiesData,
-            loading: false
+            studies: studiesData
         });
     };
 

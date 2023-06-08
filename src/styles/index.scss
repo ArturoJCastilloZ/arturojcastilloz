@@ -13,3 +13,13 @@ body {
     font-size: 1.2rem;
     line-height: 1.2;
 }
+
+/* Estilo para el scrollbar en navegadores webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Estilo para el scrollbar en Firefox */
+scrollbar {
+    width: 0px;
+}

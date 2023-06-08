@@ -37,13 +37,14 @@ const Header = ({ handleClick, isOpen, closeMenu, headerList }) => {
                         .map((data, index) => {
                             return (
                                 <Enlaces
-                                    key={index}
-                                    url={data.Enlace}
-                                    offset={data.offset}
-                                    closeMenu={closeMenu}
-                                    title={data.Titulo} />
-                            )
-                        })}
+                                key={index}
+                                url={data.Enlace}
+                                offset={data.offset}
+                                closeMenu={closeMenu}
+                                title={data.Titulo}/>
+                                )
+                            }
+                        )}
                 </ListaDesordenada>
             </Navbar>
         </div>
