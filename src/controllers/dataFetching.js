@@ -3,6 +3,8 @@ import Aos from 'aos';
 import { fetchData } from './firebaseData';
 
 const useDataFetching = () => {
+    const [isLoading, setIsLoading] = useState(true);
+
     const [data, setData] = useState({
         about: [],
         header: [],
@@ -35,9 +37,12 @@ const useDataFetching = () => {
             social: socialData,
             studies: studiesData
         });
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 1500)
     };
 
-    return data;
+    return { isLoading, ...data };
 };
 
 export default useDataFetching;

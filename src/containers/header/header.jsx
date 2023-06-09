@@ -5,28 +5,38 @@ import { Navbar } from './content/navbar';
 import { ListaDesordenada } from './ul_header/ul';
 import { Enlaces } from './li_header/li';
 
-
-const Header = ({ handleClick, isOpen, closeMenu, headerList }) => {
-    /** change header color when scroll */
-    const [color, setColor] = useState(false)
+const Header = ({ headerList }) => {
+    const [color, setColor] = useState(false);
     const [images, setImages] = useState([]);
+    const [isOpen, setIsOpen] = useState(false);
+
     const changeColor = () => {
-        if (window.scrollY >= 90) {
-            setColor(true)
-        } else {
-            setColor(false)
-        }
-    }
+        setColor(window.scrollY >= 90);
+    };
+
+    const handleClick = () => {
+        setIsOpen(prevIsOpen => !prevIsOpen);
+    };
+
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
 
     useEffect(() => {
         const fetchImageData = async () => {
             const aboutData = await fetchImages(['logo.png']);
-            setImages(aboutData)
+            setImages(aboutData);
         };
-        fetchImageData();
-    }, [headerList])
 
-    window.addEventListener('scroll', changeColor)
+        fetchImageData();
+    }, [headerList]);
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeColor);
+        return () => {
+            window.removeEventListener('scroll', changeColor);
+        };
+    }, []);
 
     return (
         <div className={color ? 'header header-bg' : 'header'}>
@@ -34,21 +44,22 @@ const Header = ({ handleClick, isOpen, closeMenu, headerList }) => {
                 <ListaDesordenada isOpen={isOpen}>
                     {headerList
                         .sort((a, b) => a._id - b._id)
-                        .map((data, index) => {
-                            return (
-                                <Enlaces
+                        .map((data, index) => (
+                            <Enlaces
                                 key={index}
                                 url={data.Enlace}
                                 offset={data.offset}
                                 closeMenu={closeMenu}
-                                title={data.Titulo}/>
-                                )
-                            }
-                        )}
+                                title={data.Titulo}
+                            />
+                        ))}
                 </ListaDesordenada>
             </Navbar>
         </div>
-    )
-}
+    );
+};
+
+export default Header;
+
 
 export { Header }

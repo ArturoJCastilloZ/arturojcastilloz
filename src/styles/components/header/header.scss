@@ -7,12 +7,10 @@
     left: 0;
     top: 0;
     z-index: 1;
-    transition: .3s ease-in-out;
     overflow: hidden;
     transition: all .5s;
     &-bg {
         background-color: rgba(0,0,0,.9);
-        transition: all .5s;
     }
     &-navbar {
         display: flex;
