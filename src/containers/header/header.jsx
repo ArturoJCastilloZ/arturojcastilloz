@@ -1,4 +1,3 @@
-import { fetchImages } from '../../controllers/firebaseData';
 import { useState, useEffect } from 'react';
 import '../../styles/components/header/header.scss';
 import { Navbar } from './content/navbar';
@@ -7,7 +6,6 @@ import { Enlaces } from './li_header/li';
 
 const Header = ({ headerList }) => {
     const [color, setColor] = useState(false);
-    const [images, setImages] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
 
     const changeColor = () => {
@@ -23,15 +21,6 @@ const Header = ({ headerList }) => {
     };
 
     useEffect(() => {
-        const fetchImageData = async () => {
-            const aboutData = await fetchImages(['logo.png']);
-            setImages(aboutData);
-        };
-
-        fetchImageData();
-    }, [headerList]);
-
-    useEffect(() => {
         window.addEventListener('scroll', changeColor);
         return () => {
             window.removeEventListener('scroll', changeColor);
@@ -40,7 +29,7 @@ const Header = ({ headerList }) => {
 
     return (
         <div className={color ? 'header header-bg' : 'header'}>
-            <Navbar handleClick={handleClick} isOpen={isOpen} image={images[0]}>
+            <Navbar handleClick={handleClick} isOpen={isOpen}>
                 <ListaDesordenada isOpen={isOpen}>
                     {headerList
                         .sort((a, b) => a._id - b._id)
