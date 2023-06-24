@@ -6,19 +6,22 @@
     color: #ffffff;
     font-family: $font-poppins;
     padding: 4rem 1rem;
-    & > h2 {
+
+    &>h2 {
         font-size: 3rem;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 10px;
     }
+
     &-items {
         width: 1240px;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
         position: relative;
-        &::before{
+
+        &::before {
             content: '';
             position: absolute;
             width: 2px;
@@ -26,19 +29,24 @@
             background-color: $secondary-dark;
             left: calc(50% - 1px);
         }
+
         &-item {
             position: relative;
             margin-bottom: 40px;
+
             &:last-child {
                 margin-bottom: 0;
             }
-            &:nth-child(odd){
+
+            &:nth-child(odd) {
                 padding-right: calc(50% + 30px);
                 text-align: right;
             }
-            &:nth-child(even){
+
+            &:nth-child(even) {
                 padding-left: calc(50% + 30px);
             }
+
             &-date {
                 font-size: 18px;
                 color: $primary-color;
@@ -46,6 +54,7 @@
             }
         }
     }
+
     &-dot {
         height: 16px;
         width: 16px;
@@ -55,28 +64,33 @@
         border-radius: 50%;
         top: 10px;
     }
+
     &-content {
         background-color: #131313;
         padding: 30px;
         margin-top: 50px;
         border-radius: 8px;
+
         & img {
             width: 65px;
             border-radius: 50%;
             margin-top: -45px;
             margin-bottom: 10px;
         }
+
         & h3 {
             font-size: 25px;
             color: #ffffff;
             margin: 0 0 15px;
             text-transform: capitalize;
         }
+
         & span {
             font-size: 20px;
             color: #797979;
             line-height: 22px;
         }
+
         & p {
             color: #797979;
             font-size: 18px;
@@ -84,6 +98,23 @@
             line-height: 22px;
             padding-top: 1rem
         }
+    }
+}
+
+.button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 12px;
+    color: $primary-color;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .2s;
+    &:hover {
+        color: $secondary-dark;
+        border: 1px solid $secondary-dark;
     }
 }
 
